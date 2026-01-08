@@ -1,7 +1,7 @@
 variable "aws_region" {
   description = "AWS region to deploy resources"
   type        = string
-  default     = "us-east-1"   # or any region you want
+  default     = "us-east-1"
 }
 
 variable "ami" {
@@ -15,4 +15,3 @@ variable "instance_type" {
   default     = "t2.micro"
   description = "EC2 instance type"
 }
-
