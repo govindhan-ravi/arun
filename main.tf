@@ -1,6 +1,6 @@
 terraform {
   cloud {
-    organization = "neela"
+    organization = "monicasri"
 
     workspaces {
       name = "tf-cloud-s3"
@@ -19,11 +19,6 @@ provider "aws" {
   region = var.aws_region
 }
 
-
-resource "aws_instance" "myec2" {
-ami = "ami-068c0051b15cdb816"
-instance_type = "t3.micro"
-tags = {
-Name = "govi"
-}
+resource "aws_s3_bucket" "s3_bucket" {
+  bucket = var.bucket_name
 }
