@@ -1,6 +1,6 @@
 terraform {
   cloud {
-    organization = "monicasri"
+    organization = "neela"
 
     workspaces {
       name = "tf-cloud-s3"
